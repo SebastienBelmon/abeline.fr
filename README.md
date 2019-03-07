@@ -28,7 +28,7 @@ const renderAst = new rehypeReact({
   },
 }).Compiler;
 
-// create en export the template component...
+// create and export the template component...
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
