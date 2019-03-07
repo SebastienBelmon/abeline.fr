@@ -25,4 +25,8 @@ $$
 a^2 + b^2 = c^2
 $$
 
+## test cath link (interne)
+
+[Page des lynxs](/lynx)
+
 Reste a faire un test avec le MDX
