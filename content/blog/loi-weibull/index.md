@@ -1,6 +1,7 @@
 ---
 title: La loi de Weibull
 date: "2019-03-07"
+description: Petite présentation de la loi de Weibull et ses différentes caractéristiques.
 tags: ['Mathématiques', 'Probabilités']
 ---
 
