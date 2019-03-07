@@ -38,7 +38,7 @@ function Bio() {
               }}
             />
             <p>
-              Par <strong>{author}</strong>.
+              Petit carnet de notes scientifiques par <strong>{author}</strong>.
             </p>
           </div>
         );

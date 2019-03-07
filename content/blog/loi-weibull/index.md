@@ -5,7 +5,7 @@ description: Petite présentation de la loi de Weibull et ses différentes carac
 tags: ['Mathématiques', 'Probabilités']
 ---
 
-Lors d'un de mes précédents job, j'ai eu l'occasion de travailler avec la loi de Weibull pour calculer *"correctement"* le temps moyen entre deux pannes d'un équipement. Et comme c'est pas un sujet facile, voila quelques explication sur cette loi.
+Lors d'un de mes précédents job, j'ai eu l'occasion de travailler avec la loi de Weibull pour calculer *"correctement"* **le temps moyen entre deux pannes** (MTBF) d'un équipement. Et comme c'est pas un sujet si facile, voila quelques explication sur cette loi.
 
 > N'étant moi même pas expert sur ce sujet, il est possible que je fasse des erreurs d'explications. A prendre avec des pincettes donc ! :)
 
