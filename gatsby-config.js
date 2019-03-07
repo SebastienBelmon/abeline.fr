@@ -3,7 +3,7 @@ module.exports = {
     title: `Abéliné`,
     author: `Sébastien`,
     description: `Blog perso de découverte ou redécouverte de science`,
-    siteUrl: `https://abeline.netlify.com/`,
+    siteUrl: `https://abeline.fr/`,
   },
   plugins: [
     {
@@ -79,5 +79,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./static/favicon.ico`,
+      },
+    },
   ],
 };
