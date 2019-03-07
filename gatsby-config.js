@@ -52,6 +52,7 @@ module.exports = {
             },
           },
           `gatsby-remark-katex`,
+          'gatsby-remark-autolink-headers',
         ],
       },
     },

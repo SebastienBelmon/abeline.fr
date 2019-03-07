@@ -7,12 +7,12 @@ import SEO from '../components/Seo';
 import { rhythm, scale } from '../utils/typography';
 
 import rehypeReact from 'rehype-react';
-import Counter from '../components/Counter';
+import Weibull from '../components/Weibull';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    'interactive-counter': Counter,
+    'interactive-weibull-graph': Weibull,
   },
 }).Compiler;
 
