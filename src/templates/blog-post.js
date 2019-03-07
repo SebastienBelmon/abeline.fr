@@ -6,6 +6,16 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import { rhythm, scale } from '../utils/typography';
 
+import rehypeReact from 'rehype-react';
+import Counter from '../components/Counter';
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: {
+    'interactive-counter': Counter,
+  },
+}).Compiler;
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
@@ -29,7 +39,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {renderAst(post.htmlAst)}
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -79,7 +89,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "DD/MM/YYYY")

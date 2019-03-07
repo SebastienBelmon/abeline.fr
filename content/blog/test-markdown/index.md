@@ -29,4 +29,47 @@ $$
 
 [Page des lynxs](/lynx)
 
-Reste a faire un test avec le MDX
+## Custom component
+
+Idée récupéré de [cette page](https://using-remark.gatsbyjs.org/custom-components/) en utilisant `rehype-react` :
+
+###### ./src/templates/blog-post.js
+```jsx{2,3,5,6,7,8,9,10,24}
+// ...
+import rehypeReact from "rehype-react";
+import Counter from "../components/Counter";
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: {
+    "interactive-counter": Counter,
+  },
+}).Compiler;
+
+// create en export the template component...
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      htmlAst
+      frontmatter {
+        title
+        date(formatString: "DD/MM/YYYY")
+        description
+        tags
+      }
+    }
+  }
+`;
+```
+
+###### Résultat :
+
+<interactive-counter></interactive-counter>
