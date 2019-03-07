@@ -51,6 +51,7 @@ module.exports = {
               target: '_blank',
             },
           },
+          `gatsby-remark-katex`,
         ],
       },
     },

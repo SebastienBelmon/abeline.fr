@@ -15,4 +15,14 @@ const MyComponent = () => <div>Salut</div>;
 export default MyComponent;
 ```
 
+## KateX test
+
+Inline equaton $a^2 + b^2 = c^2$
+
+ou alors en mode *display*
+
+$$
+a^2 + b^2 = c^2
+$$
+
 Reste a faire un test avec le MDX

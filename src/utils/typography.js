@@ -1,4 +1,5 @@
 import './global.css';
+import 'katex/dist/katex.min.css';
 
 import Typography from 'typography';
 import sutroTheme from 'typography-theme-sutro';
