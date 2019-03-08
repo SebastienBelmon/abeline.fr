@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
-import { rhythm, scale } from '../utils/typography';
+import Bio from '../components/Bio.js';
+import Layout from '../components/Layout.js';
+import SEO from '../components/Seo.js';
+import { rhythm, scale } from '../utils/typography.js';
 
 import rehypeReact from 'rehype-react';
-import Weibull from '../components/Weibull';
+import Weibull from '../components/Weibull.js';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
