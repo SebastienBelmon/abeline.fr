@@ -52,7 +52,9 @@ module.exports = {
             },
           },
           `gatsby-remark-katex`,
-          'gatsby-remark-autolink-headers',
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-emoji`,
+
         ],
       },
     },
@@ -62,13 +64,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Blog Abéliné`,
+        short_name: `Abéliné`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#1ca086`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/abeline.png`,
       },
     },
     `gatsby-plugin-offline`,
