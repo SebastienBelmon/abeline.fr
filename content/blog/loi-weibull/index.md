@@ -26,7 +26,11 @@ $$
 Et comme le taux de défaillance c'est simplement $\lambda=\frac{nbr\space de\space defaillances}{temps\space d'observation\space cumulee}$, on calcul facilement : 
 
 $$
-\lambda=\frac{625}{1*500000}=0,00125\space (defaillances/an)
+\lambda=\frac{625}{1*500000}
+$$
+
+$$
+\lambda=0,00125\space (defaillances/an)
 $$
 
 Et enfin,
